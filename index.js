@@ -34,7 +34,8 @@ date: "${new Date().toISOString().slice(0, 10)}"
 `,
 })
 
-const contentDirPath = "/Users/jaga/coding/jagascript.com/content/blog"
+const blogPath = "/Users/jaga/coding/jagascript.com"
+const contentDirPath = `${blogPath}/content/blog`
 
 prompt
   .run()
@@ -51,5 +52,5 @@ function handleAnswer(answer) {
   fs.writeFileSync(filename, answer.result.replace(t, formatTitle(t)), {
     encoding: "utf-8",
   })
-  execSync(`code-insiders ${filename}`)
+  execSync(`code-insiders blogPath --goto ${filename}`)
 }
