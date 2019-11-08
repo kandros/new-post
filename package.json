@@ -1,0 +1,15 @@
+{
+  "name": "new-post",
+  "version": "0.0.1",
+  "main": "index.js",
+  "bin": {
+    "new-post": "index.js"
+  },
+  "author": "jaga santagostino <jagasantagostino@gmail.com> (https://jagasantagostino.com)",
+  "license": "MIT",
+  "dependencies": {
+    "enquirer": "^2.3.2",
+    "lodash": "^4.17.15",
+    "title": "^3.4.1"
+  }
+}
