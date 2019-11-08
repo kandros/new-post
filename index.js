@@ -52,5 +52,5 @@ function handleAnswer(answer) {
   fs.writeFileSync(filename, answer.result.replace(t, formatTitle(t)), {
     encoding: "utf-8",
   })
-  execSync(`code-insiders blogPath --goto ${filename}`)
+  execSync(`code-insiders ${blogPath} --goto ${filename}`)
 }
